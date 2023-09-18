@@ -1,5 +1,6 @@
 //Global Variables
 int appWidth, appHeight;
+float xRect, yRect, widthRect, heightRect;
 //
 void setup() {
   //Print & Println
@@ -13,10 +14,15 @@ void setup() {
   appWidth = width;
   appHeight = height;
   //
+  //Population
+  xRect = appWidth*0;
+  yRect = appHeight*0;
+  widthRect = appWidth-1;
+  heightRect = appHeight-1;
 } //End setup
 //
 void draw() {
-  rect(appWidth, appWidth, appWidth, appWidth);
+  rect(xRect, yRect, widthRect, heightRect);
 } //End draw
 //
 void keyPressed() {
