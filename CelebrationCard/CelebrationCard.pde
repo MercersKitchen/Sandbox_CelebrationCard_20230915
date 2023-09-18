@@ -2,8 +2,9 @@
 //
 void setup() {
   //Print & Println
-  print("Hello");
-  print("World");
+  println("Hello World");
+  println("Width:"+width, "\t", "Height:"+height);
+  println("Display Width: "+displayWidth, "\tDisplay Height: "+displayHeight);
   //Character Escapes, tab, new
 } //End setup
 //
