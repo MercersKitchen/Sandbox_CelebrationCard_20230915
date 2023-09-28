@@ -36,6 +36,14 @@ void setup() {
   //rect(); //Image, foreground, near the top
   //rect(); //Copy and Paste this for all rect()s
   //
+  // Text Setup
+  // Fonts from OS (Operating System)
+  //String[] fontList = PFont.list(); //Lists all fonts available on OS
+  //printArray(fontList);
+  [fontName] = createFont("[fontSpelling]", [startingFontSize]);
+  footerFont = createFont("ArialMT", 55); //Verify the font exists in Processing.Java
+  // Tools / Create Font / Find Font / Do not press "OK", known bug
+  //
 } //End setup
 //
 void draw() {
