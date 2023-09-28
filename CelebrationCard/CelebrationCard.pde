@@ -25,11 +25,16 @@ void setup() {
   widthRectQuit = appWidth*1/2;
   heightRectQuit = appHeight*1/2;
   //
+  //DIVs
+  rect(xRectBackground, yRectBackground, widthRectBackground, heightRectBackground);
+  rect(xRectQuit, yRectQuit, widthRectQuit, heightRectQuit);
+  //rect(); //Image, foreground, near the top
+  //rect(); //Copy and Paste this for all rect()s
+  //
 } //End setup
 //
 void draw() {
-  rect(xRectBackground, yRectBackground, widthRectBackground, heightRectBackground);
-  rect(xRectQuit, yRectQuit, widthRectQuit, heightRectQuit);
+  
 } //End draw
 //
 void keyPressed() {
