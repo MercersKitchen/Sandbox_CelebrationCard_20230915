@@ -2,6 +2,11 @@
 int appWidth, appHeight;
 float xRectBackground, yRectBackground, widthRectBackground, heightRectBackground;
 float xRectQuit, yRectQuit, widthRectQuit, heightRectQuit;
+//String ; //All text variables as name=value pairs
+//PFont ; //All fonts used
+//color ; //colour palette & inks
+int sizeFont, size; //Text Variables
+//
 //
 void setup() {
   //Print & Println
