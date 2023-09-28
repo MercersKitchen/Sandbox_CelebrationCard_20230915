@@ -47,7 +47,14 @@ void setup() {
 } //End setup
 //
 void draw() {
-  
+  //Drawing Text, copied for each line of text
+  //fill( [colourName] ); //ink
+  textAlign( CENTER, CENTER ); //Align X&Y, see Processing.org / Reference
+  //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
+  //size = [pixelNumberFontSize]; //integer number
+  //textFont( [fontVariable], size ); // states which font to use
+  //text ( [textStringName], [four rect() variables copied from DIVs]);
+  //
 } //End draw
 //
 void keyPressed() {
