@@ -11,10 +11,16 @@ int appWidth, appHeight;
  int sizeFont, size;
  color resetDefaultInk=#FFFFFF, purpleInk=#2C08FF, yellowInk=#E9FF00;
  */
-//PFont ; //All fonts used
-//color ; //colour palette & inks
-int sizeFont, size; //Text Variables
-//
+/* Image Variables for Drawing Images to CANVAS
+ PImage picBackground, bikeForeground, darthVaderPortrait;
+ float imageWidth, imageHeight;
+ */
+/* Image Attributes to affect CANVAS Images with Key Pressing
+ Boolean nightmode=false; //Note: clock will automatically turn on
+ Boolean brightnessControl=false; //Note: ARROWS
+ int brightnessNumber=128; //Range:1-255
+ */
+//color [name]=[#hexidecimal]; //colour palette & inks
 //
 void setup() {
   //Print & Println
@@ -28,7 +34,7 @@ void setup() {
   appWidth = width; //displayWidth
   appHeight = height; //displayHeight
   //
-  //Population
+  //Population: DIVs
   xRectBackground = appWidth*0;
   yRectBackground = appHeight*0;
   widthRectBackground = appWidth-1;
@@ -52,10 +58,21 @@ void setup() {
    //Verify the font exists in Processing.Java
    // Tools / Create Font / Find Font / Do not press "OK", known bug
    */
+  /* Population: Image WIDTH and HEIGHT Dimesions
+   //Coded from actual IMAGE File Properties
+   //RIght Click / Details / Width & Height
+   */
+  /* Population: Images and Concatenation
+   String up = "..";
+   String open = "/";
+   String [name] = "[pathway spellings]";
+   String [name] = "[fileName + extension]";
+   [name] = loadImage( [string pathway + files] );
+   */
 } //End setup
 //
 void draw() {
-  /*Drawing Text, copied for each line of text
+  /* Drawing Text, copied for each line of text
    fill( [colourName] ); //ink
    textAlign( CENTER, CENTER ); //Align X&Y, see Processing.org / Reference
    //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
@@ -64,8 +81,14 @@ void draw() {
    //Example Below
    //text ( [textStringName], [four rect() variables copied from DIVs]);
    text ( title, xTitle, yTitle, widthTitle, heightTitle );
-   */  
-  //
+   */
+  /* Image attributes that changes the image
+   //IF-Else
+   //Example tint();
+   */
+  /* Drawing Images
+   image ([image name], [ rect() variables, 4) ;
+   */
 } //End draw
 //
 void keyPressed() {
