@@ -2,7 +2,10 @@
 int appWidth, appHeight;
 float xRectBackground, yRectBackground, widthRectBackground, heightRectBackground;
 float xRectQuit, yRectQuit, widthRectQuit, heightRectQuit;
-//String ; //All text variables as name=value pairs
+/* Text Strings for Drawing Text to CANVAS
+ String [name]="[phrase]", [name]="[phrase]", [etc]; //All text variables as name=value pairs
+ String title="WAHOO!!", footer="drip"; //Example of instructions, previous line
+ */
 //PFont ; //All fonts used
 //color ; //colour palette & inks
 int sizeFont, size; //Text Variables
@@ -17,8 +20,8 @@ void setup() {
   //
   //fullScreen();
   size(600, 400);
-  appWidth = width;
-  appHeight = height;
+  appWidth = width; //displayWidth
+  appHeight = height; //displayHeight
   //
   //Population
   xRectBackground = appWidth*0;
